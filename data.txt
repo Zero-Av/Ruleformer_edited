@@ -1,4 +1,0 @@
-Paris capital_of France
-France located_in Europe
-London capital_of UK
-UK located_in Europe
