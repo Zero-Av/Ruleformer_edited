@@ -244,7 +244,7 @@ def main():
         random.seed(opt.seed)
         torch.cuda.manual_seed_all(opt.seed)
 
-    base_data = DataBase(opt.data, subgraph=opt.subgraph)
+    base_data = DataBase('DATASET/' + opt.data, subgraph='DATASET/' + opt.subgraph)
     opt.src_vocab_size, opt.trg_vocab_size = base_data.getinfo()
     opt.src_pad_idx = base_data.e2id['<pad>']   # never hardcode 0
 
